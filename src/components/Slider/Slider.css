@@ -1,0 +1,107 @@
+.wrap {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+
+}
+
+.sliderContainer {
+    height: 90vh;
+    width: 50vw;
+    background-color: #ededed;
+
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: all ease-in-out .4s;
+}
+
+.imgs {
+    grid-row: 1 / span 2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text {
+    text-align: center;
+    font-size: 1.5rem;
+
+    background-color: #ededed;
+    padding: 2rem 6rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+    opacity: 0;
+    transition: opacity ease-out .4s;
+    color: #000;
+}
+
+.active-text {
+    opacity: .8;
+}
+
+.active {
+    opacity: 1;
+}
+
+.btnRight {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    border-style: solid;
+
+    background-color: #ededed;
+
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-60%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.btnRight-img {
+    height: 2rem;
+}
+
+.btnLeft {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    border-style: solid;
+
+    background-color: #ededed;
+
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-60%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.btnLeft-img {
+    height: 2rem;
+}
